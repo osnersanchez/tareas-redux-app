@@ -10,7 +10,7 @@ const stadoInicial: Todo[] = [
     t3
 ];
 
-export const todoReducer = (state = stadoInicial, action: Acciones) => {
+export function todoReducer (state = stadoInicial, action: Acciones): Todo[] {
 
     switch (action.type) {
         case ADD_TODO:
